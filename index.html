@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title></title>
+  <link rel="stylesheet" href="bootstrap.css">
+  <link rel="stylesheet" href="syntaxhighlighter_3.0.83/styles/shCore.css">
+  <link rel="stylesheet" href="syntaxhighlighter_3.0.83/styles/shThemeDefault.css">
+  
+
+  <script data-cfasync='false' type='text/javascript'>
+    window.captain = {up: function(fn) { captain.topics.push(fn) }, topics: []};
+    // Add your settings here:
+    captain.up({
+      api_key: '574f50bd682f7aada2000027',
+       user: {
+        // The user's unique ID on your site or app
+        id: '666',
+        // The user name
+        name: 'Mr. tester',
+        // The user profile picture, a full URL
+        image: 'http://static1.squarespace.com/static/52c2df7ae4b0d215dded86fd/t/550d8f2de4b0961711de9f84/1426951982536/',
+        // Any custom field you want.
+        favorite_color: 'black'
+      }
+    });
+  </script>
+  <script data-cfasync='false' type='text/javascript'>
+    (function() {
+      var cpt = document.createElement('script'); cpt.type = 'text/javascript'; cpt.async = true;
+      cpt.src = 'https://captainup.com/assets/embed.es.js';
+      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(cpt);
+    })();
+  </script>
+  <script src="jquery.js" type="text/javascript" charset="utf-8"></script>
+  <script src="bootstrap.js" type="text/javascript" charset="utf-8"></script>
+  <script src="app.js" type="text/javascript" charset="utf-8"></script>
+  <script src="syntaxhighlighter_3.0.83/src/shCore.js" type="text/javascript" charset="utf-8"></script>
+  <script src="syntaxhighlighter_3.0.83/scripts/shBrushJScript.js" type="text/javascript" charset="utf-8"></script>
+</head>
+<body>
+<div class="container">
+  
+
+  <div id='cptup-ready'></div> 
+  <div class="panel panel-default">
+    <div class="panel-heading">
+      <h2>Llamadas a CaptainUp desde <a href="www.serpiente-amaru.com" >www.serpiente-amaru.com </a></h2>
+    </div>
+    <div class="panel-body">
+    <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+      <div class="panel">
+          <div class="panel-heading" role="tab" id="intro">
+            <h4>INTRO</h4>
+          </div>
+          <div id="collapseOne" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="intro">
+          <div class="panel-body">
+          <div class="row">
+            <h4>Configuración de Idioma</h4>
+<pre class="brush: js">
+window._cpt_config = {
+  locale: {
+    loading :'Cargando...',
+    anon_name :'Anónimo',
+    your_profile_tab:'Mi perfil',
+    game_center_tab:'Comunidad',
+    activity_center_tab:'Retos',
+    activity_center_inner_tab: 'Inicio',
+    badges_tab_title: 'Insignias',
+    levels_tab_title: 'Niveles',
+    link_to_levels : 'Ver todos los niveles',
+    link_to_more_activities  : 'Ver más',
+    points: 'puntos',
+    back_button: 'atras',
+    leaderboard_widget:{
+      title:'Tablero de posiciones',
+      no_players_msg:'No mas personas para mostrar',
+      all_time_ranking:'Todo el tiempo',
+      monthly_ranking:'Este mes',
+      weekly_ranking:'Esta semana',
+      daily_ranking:'Hoy',
+      sign_up_incentive:'Tu podrias estar aqui, unete al juego',
+      show_player:'Mostrar posiciones',
+      short_incentive:'Unete al juego!'
+    },
+    activity_widget:{
+      title:'Historial actividades',
+      badge_messages:'Has ganado',
+      no_more:'No hay mas actividades para mostrar',
+      no_activities:'No hay actividades aun'
+    },
+    player_profile:{
+      activity_title:'Mi actividad',
+      sign_out:'Salir',
+      points_today:'Puntos de hoy',
+      points_this_week:'Puntos esta semana',
+      next_level_in:'Siguiente nivel en'
+    },
+    badges_tab:{
+      show_all:'Mostrar todos',
+      show_earned:'Ganados',
+      show_missing:'Faltantes',
+      badges_earned:'Insignias ganadas',
+      no_badges:'No hay insignias para mostrar'
+    },
+    points_notification:{
+      messages:'Felicidades!, Aqui tienes {points} puntos por tu esfuerzo! :)'
+    }
+  }
+};</pre>
+          </div>
+           <div class="row">
+              <p>Logeo de usuario en CaptainUp</p>
+<pre class="brush: js">
+captain.up({
+  api_key: '574f50bd682f7aada2000027',
+   user: {
+    // The user's unique ID on your site or app
+    id: '666',
+    // The user name
+    name: 'Mr. tester',
+    // The user profile picture, a full URL
+    image: 'http://static1.squarespace.com/static/52c2df7ae4b0d215dded86fd/t/550d8f2de4b0961711de9f84/1426951982536/',
+    // Any custom field you want.
+    favorite_color: 'black'
+  }
+});</pre>
+            </div>
+            <div class="row">
+              <p>Juramento <button type="button" id="juramento">Probar</button></p>
+<pre class="brush: js">
+captain.up(function() {
+  captain.action('jurar', {
+    entity: {
+      type: 'juramento',
+      name: 'Proteger el agua'
+    }
+  });
+});</pre>
+            </div>
+          </div>
+          </div>
+        </div>
+        <div class="panel">
+          <div class="panel-heading">
+            <h4>NIVEL 1</h4>
+          </div>
+          <div class="panel-body">
+            <div class="row">
+              <p>Imagen de pachamama <button type="button" id="tarea1">Probar</button></p>
+<pre class="brush: js">
+captain.up(function() {
+  captain.action('revisar', {
+    entity: {
+      type: 'articulo',
+      name: 'Pachamama (madre tierra)',
+      url : 'http://www.kanobosur.com/2012/10/la-divinidad-pachamama-madre-tierra.html'
+    }
+  });
+});</pre>
+
+            </div>
+
+            <div class="row">
+              <p>Video de Historia de pachamama <button type="button" id="tarea2">Probar</button></p>
+<pre class="brush: js">
+captain.up(function() {
+  captain.action('watch', {
+    entity: {
+      type: 'video',
+      platform:'youtube',
+      name: 'Historia de la Pachamama',
+      page_url: 'http://www.serpiente-amaru.com/course/view.php?id=2&section=1'
+      url : 'https://www.youtube.com/watch?time_continue=23&v=afJ63nTVaE8'
+    }
+  });
+});</pre>
+
+            </div> 
+
+            <div class="row">
+              <p>Foro de Busquemos ayuda para salvar a nuestro planeta Foro <button type="button" id="tarea3">Probar</button></p>
+<pre class="brush: js">
+captain.up(function() {
+  captain.action('cargar', {
+    entity: {
+      type: 'foro',
+      name: 'Tema del foro',
+      tema: 'Tema del foro',
+      url : 'http://www.serpiente-amaru.com/mod/forum/view.php?id=2'
+    }
+  });
+});</pre>
+
+            </div>
+
+            <div class="row">
+              <p>Imagen de amaru <button type="button" id="tarea4">Probar</button></p>
+<pre class="brush: js">
+captain.up(function() {
+  captain.action('revisar', {
+    entity: {
+      type: 'articulo',
+      name: 'aymara amaru el agua',
+      url : 'http://www.rukuyaya.com.ec/index.php/amaru/'
+    }
+  });
+});</pre>
+            </div>
+
+
+          </div>
+        </div><!--/panel NIVEL 1-->
+        <div class="panel">
+          <div class="panel-heading">
+            <h4>NIVEL 2</h4>
+          </div>
+          <div class="panel-body">
+              <div class="row">
+              <p>Imagen de reservas de agua dulce en el mundo por region <button type="button" id="tarea5">Probar</button></p>
+<pre class="brush: js">
+captain.up(function() {
+  captain.action('revisar', {
+    entity: {
+      type: 'articulo',
+      name: 'Distribución del agua en el mundo',
+      url : 'https://issuu.com/juancamf/docs/el_agua_en_la_tierra'
+    }
+  });
+});</pre>
+            </div>
+
+            <div class="row">
+              <p>Enlace de Yaku en Ecuador <button type="button" id="tarea5">Probar</button></p>
+<pre class="brush: js">
+captain.up(function() {
+  captain.action('revisar', {
+    entity: {
+      type: 'articulo',
+      name: 'Yaku en Ecuador',
+      url : 'http://www.serpiente-amaru.com/mod/page/view.php?id=22'
+    }
+  });
+});</pre>
+            </div>
+
+          </div>
+        </div>
+    </div>
+  </div>
+</div>
+</body>
+</html>
