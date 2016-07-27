@@ -1,14 +1,25 @@
 function main(){
 	$('#juramento').on('click',function(event) {
-		console.log('jurar');
-		captain.up(function() {
-		  captain.action('jurar', {
-		    entity: {
-		      type: 'juramento',
-		      name: 'Proteger el agua'
-		    }
-		  });
-		});
+		var juro = Lockr.get('jurament');
+		if(typeof juro ==="undefined"){
+			console.log('jurar');
+			Lockr.set('jurament',1);
+			captain.up(function() {
+			  captain.action('jurar', {
+			    entity: {
+			      type: 'juramento',
+			      name: 'Proteger el agua'
+			    }
+			  });
+			});
+		}else{
+			new PNotify({
+			    title: 'Actividad cumplida',
+			    text: 'Ya recibiste 10 puntos por esta actividad',
+			    type: 'success',
+			});
+			console.log('ud ya juro joven');
+		}
 	});
 
 	$('#tarea1').on('click',function(event) {
@@ -22,6 +33,29 @@ function main(){
 		    }
 		  });
 		});
+	});
+
+	$('#imagen1').on('click',function(event) {
+		console.log('imagen');
+		captain.up(function() {
+		   captain.action('revisar', {
+		    entity: {
+		      type: 'articulo',
+		      name: 'Pachamama (madre tierra)',
+		      url : 'http://www.kanobosur.com/2012/10/la-divinidad-pachamama-madre-tierra.html'
+		    }
+		  });
+		});
+		setTimeout(function(){
+			 var win = window.open('http://www.kanobosur.com/2012/10/la-divinidad-pachamama-madre-tierra.html', '_blank');
+	  		 if (win) {
+				    //Browser has allowed it to be opened
+				    win.focus();
+				} else {
+				    //Browser has blocked it
+				    alert('Por favor habilitar los Popups para este sitio');
+				}
+		},1500);
 	});
 
 	$('#tarea2').on('click',function(event) {
@@ -60,7 +94,21 @@ function main(){
 		    entity: {
 		      type: 'articulo',
 		      name: 'Pachamama (madre tierra)',
-		      url : 'http://www.kanobosur.com/2012/10/la-divinidad-pachamama-madre-tierra.html'
+		      url : 'http://www.rukuyaya.com.ec/index.php/amaru/'
+		    }
+		  });
+		});
+	});
+
+	$('#audio').on('click',function(event) {
+		console.log('audio');
+		captain.up(function() {
+		   captain.action('cargar', {
+		    entity: {
+		      type: 'audio',
+		      name: 'Lo que he aprendido',
+		      tema: 'Lo que he aprendido',
+		      url : 'http://www.serpiente-amaru.com/mod/assign/view.php?id=13'
 		    }
 		  });
 		});
