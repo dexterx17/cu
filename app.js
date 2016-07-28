@@ -35,6 +35,12 @@ function main(){
 		});
 	});
 
+
+	$('#video1').on('click',function(event) {
+		console.log('fue');
+	});
+
+
 	$('#imagen1').on('click',function(event) {
 		console.log('imagen');
 		captain.up(function() {

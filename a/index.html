@@ -1,0 +1,576 @@
+<!DOCTYPE html>
+<html class="modzrjs modzrflexbox modzrflexboxlegacy modzrcanvas modzrdraganddrop modzrrgba modzrhsla modzrmultiplebgs modzrbackgroundsize modzrborderimage modzrborderradius modzrboxshadow modzrtextshadow modzropacity modzrcssanimations modzrcsscolumns modzrcssgradients modzrcsstransforms modzrcsstransforms3d modzrcsstransitions modzrfontface modzrgeneratedcontent modzrvideo modzraudio wf-roboto-n4-active wf-roboto-n1-active wf-roboto-i1-active wf-roboto-n3-active wf-roboto-i3-active wf-roboto-i4-active wf-roboto-n5-active wf-roboto-i5-active wf-roboto-n7-active wf-roboto-i7-active wf-roboto-n9-active wf-roboto-i9-active wf-active" style="" lang="en"><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8"><style type="text/css">.gm-style-pbc{transition:opacity ease-in-out;background-color:black;text-align:center}.gm-style-pbt{font-size:22px;color:white;font-family:Roboto,Arial,sans-serif;position:relative;margin:0;top:50%;-webkit-transform:translateY(-50%);-ms-transform:translateY(-50%);transform:translateY(-50%)}</style><style type="text/css">.gm-style .gm-style-cc span,.gm-style .gm-style-cc a,.gm-style .gm-style-mtc div{font-size:10px}</style><style type="text/css">@media print {  .gm-style .gmnoprint, .gmnoprint {    display:none  }}@media screen {  .gm-style .gmnoscreen, .gmnoscreen {    display:none  }}</style><link href="final/css_003.css" rel="stylesheet" type="text/css"><style type="text/css">.gm-style{font-family:Roboto,Arial,sans-serif;font-size:11px;font-weight:400;text-decoration:none}.gm-style img{max-width:none}</style>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
+<title>Viaje al páramo</title>
+<meta name="description" content="OnEvent Special Event Responsive Landing Page Template can be used for showing the event related information. Its easy to customize and work with.">
+<meta name="author" content="saptarang">
+
+<!-- Mobile Specific Meta -->
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+<!-- Stylesheets -->
+<link href="final/bootstrap.css" rel="stylesheet" media="screen">
+<link rel="stylesheet" href="final/style.css">
+<!-- Google Font Code -->
+<link href="final/css.css" rel="stylesheet" type="text/css">
+<link href="final/font-awesome.css" rel="stylesheet">
+<link href="final/responsive.css" rel="stylesheet" media="screen">
+<link rel="stylesheet" href="final/prettyPhoto.css" type="text/css" media="screen" title="prettyPhoto main stylesheet" charset="utf-8">
+<style type="text/css">h1,h2,h3,h4,h5,h6, .navigation ul li a, blockquote,.btnMain,.btnColor2,.btnColor3,.btnLte {font-family:"Roboto"; } html, body, div, p, table, tr, td, th, tbody, tfoot, ul, li, ol, dl, dd, dt, fieldset, cite, input, select, textarea, button, a, section, article, aside, header, footer, nav {font-family:"Roboto"; }  body {background-color:#e6e6e6;} .navbar-header, .btn, .schedule-box h6.section-head span, header.colored, .panel-heading a, .navigation nav ul li, .styled div strong, .priceBox:hover .heading, .priceBox.featured .heading, a.top {background-color:#ff6d40; }  a, #home li a:hover, h3 span, .speaker .col-md-2 i, #directionsPanel .adp-summary, #schedule .nav-tabs li.active h5, #main h2, .price strong  {color:#ff6d40} #schedule .nav-tabs li.active i, #schedule .nav-tabs li a:hover h5, #schedule .nav-tabs li:hover i, .schedule-box li h6 strong {color:#ff6d40;}    div.section, #home {border-top:5px solid #ff6d40;  } .styled div {border-color:#ff6d40;  } #texture {background:url(../img/body-bg1.png) repeat 0 0;} ::selection {background-color:#ff6d40; color:#fff;} ::-moz-selection {background-color:#ff6d40; color:#fff;} </style>
+
+<!-- Enable this css if you want to override styles-->
+<!--<link href="css/override.css" rel="stylesheet" media="screen">-->
+
+<!--[if lt IE 9]>
+	<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+
+
+<div style="display: none;" id="fit-vids-style" class="fit-vids-style">­<style>.fluid-width-video-wrapper{width:100%;position:relative;padding:0;}.fluid-width-video-wrapper iframe,.fluid-width-video-wrapper object,.fluid-width-video-wrapper embed {position:absolute;top:0;left:0;width:100%;height:100%;}</style></div><script style="" async="" type="text/javascript" src="final/webfont.js"></script><script type="text/javascript" src="final/modernizr-1.js"></script><link media="all" href="final/css_002.css" rel="stylesheet">
+<script src="final/common.js" charset="UTF-8" type="text/javascript"></script><script src="final/map.js" charset="UTF-8" type="text/javascript"></script><script src="final/util.js" charset="UTF-8" type="text/javascript"></script><script src="final/geometry.js" charset="UTF-8" type="text/javascript"></script><script src="final/directions_002.js" charset="UTF-8" type="text/javascript"></script><script src="final/marker.js" charset="UTF-8" type="text/javascript"></script><script src="final/onion.js" charset="UTF-8" type="text/javascript"></script><script src="final/stats.js" charset="UTF-8" type="text/javascript"></script><script src="final/controls.js" charset="UTF-8" type="text/javascript"></script><script src="final/infowindow.js" charset="UTF-8" type="text/javascript"></script><script src="final/QuotaService.RecordEvent" charset="UTF-8" type="text/javascript"></script></head>
+
+<body onload="initialize()">
+<div style="left: -180px;" id="options">
+	<span class="dialog"><h4>»</h4></span>
+	<h4 class="head">Customize Options</h4>
+    <p>Best Color Choices:</p>
+    <div class="readyColors">
+            <a style="background-color: rgb(247, 148, 45);" href="#" data-id="1">f7942d</a>
+            <a style="background-color: rgb(22, 159, 230);" href="#" data-id="2">169fe6</a>
+            <a style="background-color: rgb(108, 189, 50);" href="#" data-id="3">6cbd32</a>
+            <a style="background-color: rgb(254, 93, 85);" href="#" data-id="4">fe5d55</a> 
+            <a style="background-color: rgb(247, 189, 95);" href="#" data-id="5">f7bd5f</a>
+            <a style="background-color: rgb(74, 202, 180);" href="#" data-id="6">4acab4</a>
+            <a style="background-color: rgb(184, 104, 129);" href="#" data-id="7">b86881</a>
+            <a style="background-color: rgb(205, 149, 83);" href="#" data-id="8">cd9553</a>
+            <a style="background-color: rgb(42, 169, 201);" href="#" data-id="9">2aa9c9</a>
+            <a style="background-color: rgb(138, 108, 183);" href="#" data-id="10">8a6cb7</a>
+            <br clear="all">           
+    </div>
+    <div class="customcolorbox">
+    	<form id="customcolorsform" method="post" action="" style="margin-bottom:0;">
+    		<input id="customColor" name="customColor" value="e.g. 237dae" onfocus="javascript: this.value=''" type="text">
+            <small style="line-height:15px; display:block; margin-top:-15px;">Enter your hex code and hit enter.</small>
+            <input value=" " id="customsubmit" name="customsubmit" style="visibility:hidden;" type="submit">
+       </form>
+    </div>
+</div>
+
+
+
+<div id="texture">
+<!-- start HEADER -->
+<section id="top" class="page-block">
+  <header id="home">
+    <div class="container clearfix">
+      <div class="navigation">
+        <div class="row">
+          <div class="col-md-4 col-sm-3">
+            <h1 class="logo"><a href="#" title="Primo"><img class="img-responsive" src="http://www.serpiente-amaru.com/pluginfile.php/1/theme_archaius/logo/1469315899/13407644_10153791740952620_199605683_n.png" alt="OnEvent"></a></h1>
+          </div>
+          <div class="col-md-8 col-sm-9"> 
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar navbar-default navbar-header visible-xs" role="navigation">
+              	<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#Navigation"> 
+              		<span class="icon-bar"></span> 
+                	<span class="icon-bar"></span> 
+                	<span class="icon-bar"></span> 
+             	</button>
+            </div>
+            <nav>
+              <ul id="Navigation" class="list-inline collapse navbar-collapse">
+                <li><a href="#schedule" title="Schedule">Calendario</a></li>
+                <li><a href="#speakers" title="Speakers">Asistentes</a></li>
+                <li><a href="#faq" title="FAQ">FAQ</a></li>
+                <li><a href="#venue" title="Venue">Ubicación</a></li>
+              </ul>
+            </nav>
+          </div>
+          <!-- end col-md-10 --> 
+        </div>
+        <!--end-row--> 
+      </div>
+      <!-- end navigation --> 
+    </div>
+    <!-- end container --> 
+  </header>
+  
+</section>
+<!-- end HEADER -->
+ 
+<!--BEGIN-INTRO-BOX-->
+<section id="main" class="page-block">
+  <div class="container">
+    	<header class="clearfix">
+          		<div class="text-center">
+                    <div class="venue">
+                    	<h1>Viaje al páramo<br><small>30 de Julio, 2016</small></h1>
+                      	<h2>Nombre del paramo</h2>
+                      	<p class="text-muted">Direccion del paramo</p>
+                    </div>
+                    <div class="countdown styled"><div><span>314 </span><strong>days</strong></div><div><span>22  </span><strong>hrs</strong></div><div><span>43</span><strong>min</strong></div><div><span>53 </span><strong>sec</strong></div></div>
+                   <!-- <a href="#" title="Register For This Event" class="btn register-trigger"><i class="fa fa-plus-circle"></i> Register For this event</a>
+                    <form style="display: none;" id="register" method="post" action="form/register.php">
+                    <div class="field-wrapper">
+                        <h3 class="regHeading">Register For This <span>Event</span></h3>
+                        <div class="row">
+                          <div class="col-md-4 form-row">
+                            <input class="form-control" id="name" name="name" placeholder="Your Name" type="text">
+                          </div>
+                          <div class="col-md-4 form-row">
+                            <input class="form-control" id="phone" name="phone" placeholder="Your Phone" type="tel">
+                          </div>
+                          <div class="col-md-4 form-row">
+                            <input class="form-control" id="email" name="email" placeholder="Your Email" type="email">
+                          </div>
+                          </div>
+                          <div class="form-row clearfix">
+                            <textarea cols="60" rows="3" id="comment" name="comment" class="form-control" placeholder="Write your comment here..."></textarea>
+                          </div>
+                          <input value="Submit" class="btn btn-custom btn-lg" id="submit" name="submit" type="submit">
+                     </div>
+                    </form>-->
+            	</div>
+      </header>
+   </div>
+</section>
+
+<!--BEGIN-INTRO-BOX-->
+<section id="intro" class="page-block">
+  <div class="container">
+    <div class="section">
+      <article>
+        <h3>Acerca del <span>Evento</span></h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+Nulla hendrerit vitae nulla at ultricies. Suspendisse consequat tempor 
+mi, eu tristique mi. 
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+Suspendisse dignissim convallis dolor at viverra. Nullam consequat nulla
+ enim, eu vulputate magna varius quis. 
+          Cum sociis natoque penatibus et magnis dis parturient montes, 
+nascetur ridiculus mus. </p>
+      </article>
+    </div>
+    <!--end-section--> 
+  </div>
+</section>
+<!--END-INTRO-BOX--> 
+
+<!--BEGIN-SCHEDULE-->
+<section id="schedule" class="page-block">
+  <div class="container">
+    <div class="section no-padding clearfix"> 
+      
+      <!-- Nav tabs -->
+      <ul class="nav nav-tabs clearfix">
+        <li class="active">
+        	<a href="#event-schedule" data-toggle="tab"><i class="fa fa-clock-o"></i>
+          	<h5>Calendario evento<small>Actividades</small></h5>
+          	</a>
+        <span style="display: none;" class="arrow"></span></li>
+        <li>
+        	<a href="#event-gallery" data-toggle="tab"><i class="fa fa-picture-o"></i>
+          	<h5>Galeria evento<small>Fotos de aventuras pasads</small></h5>
+          	</a>
+        <span style="display: none;" class="arrow"></span></li>
+      </ul>
+      
+      <!-- Tab panes -->
+      <div class="tab-content">
+        <div class="tab-pane active" id="event-schedule">
+          <h3><i class="fa fa-clock-o"></i><span>Calendario</span> evento </h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+Nulla hendrerit vitae nulla at ultricies. Suspendisse consequat tempor 
+mi, eu tristique mi. 
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+Suspendisse dignissim convallis dolor at viverra. Nullam consequat nulla
+ enim, eu vulputate magna varius quis. 
+            Cum sociis natoque penatibus et magnis dis parturient 
+montes, nascetur ridiculus mus. </p>
+          <div class="row clearfix">
+          
+            <div class="col-md-6 col-sm-12 schedule-box">
+              <h6 class="section-head"><span>Day 1</span> 6 Horas</h6>
+              <ul class="activities">
+                <li>
+                  <h6><strong>10:00 am</strong> - Suspendisse dignissim </h6>
+                  <p>Convallis dolor at viverra. Nullam consequat nulla enim, eu vulputate magna varius quis.</p>
+                </li>
+                <li>
+                  <h6><strong>12:30 pm</strong> - Lunch Time </h6>
+                  <p>Convallis dolor at viverra. Nullam consequat nulla enim, eu vulputate magna varius quis.</p>
+                </li>
+                <li>
+                  <h6><strong>1:30 pm</strong> - Lorem Ipsum Dolor </h6>
+                  <p>Convallis dolor at viverra. Nullam consequat nulla enim, eu vulputate magna varius quis.</p>
+                </li>
+              </ul>
+            </div>
+            
+            <div class="col-md-6 col-sm-12 schedule-box">
+              <h6 class="section-head"><span>Day 2</span> 6 Horas</h6>
+              <ul class="activities">
+                <li>
+                  <h6><strong>10:00 am</strong> - Suspendisse dignissim </h6>
+                  <p>Convallis dolor at viverra. Nullam consequat nulla enim, eu vulputate magna varius quis.</p>
+                </li>
+                <li>
+                  <h6><strong>12:30 pm</strong> - Lunch Time </h6>
+                  <p>Convallis dolor at viverra. Nullam consequat nulla enim, eu vulputate magna varius quis.</p>
+                </li>
+                <li>
+                  <h6><strong>1:30 pm</strong> - Lorem Ipsum Dolor </h6>
+                  <p>Convallis dolor at viverra. Nullam consequat nulla enim, eu vulputate magna varius quis.</p>
+                </li>
+              </ul>
+            </div>
+            
+          </div>
+          <!--end-of-row--> 
+        </div>
+        <!--end-event-schedule-content-->
+        
+        <div class="tab-pane" id="event-gallery">
+          <h3><i class="fa fa-picture-o"></i><span>Gallery</span> evento </h3>
+          <p>Imágenes del lugar</p>
+          <div class="img-grid clearfix">
+            <ul id="eg-thumbs" class="eg-thumbs clearfix">
+              <li> 
+              	<a href="http://www.dezinethemes.com/envato/onevent/v3/img/gallery/large/01.jpg" title="Event PhotoGallery" rel="prettyPhoto[gallery]"> <img src="final/01.jpg" alt="Event Photo" class="img-responsive">
+                <div class="img-caption"><span>Image Caption 1</span></div></a> 
+              </li>
+              <li> 
+              	<a href="http://www.dezinethemes.com/envato/onevent/v3/img/gallery/large/02.jpg" title="Event PhotoGallery" rel="prettyPhoto[gallery]"> <img src="final/02.jpg" alt="Event Photo" class="img-responsive">
+                <div class="img-caption"><span>Image Caption 2</span></div></a> 
+              </li>
+              <li> 
+              	<a href="http://www.dezinethemes.com/envato/onevent/v3/img/gallery/large/03.jpg" title="Event PhotoGallery" rel="prettyPhoto[gallery]"> <img src="final/03.jpg" alt="Event Photo" class="img-responsive">
+                <div class="img-caption"><span>Image Caption 3</span></div></a> 
+              </li>
+              <li> 
+              	<a href="http://www.dezinethemes.com/envato/onevent/v3/img/gallery/large/04.jpg" title="Event PhotoGallery" rel="prettyPhoto[gallery]"> <img src="final/04.jpg" alt="Event Photo" class="img-responsive">
+                <div class="img-caption"><span>Image Caption 4</span></div></a> 
+              </li>
+              <li> 
+              	<a href="http://www.dezinethemes.com/envato/onevent/v3/img/gallery/large/05.jpg" title="Event PhotoGallery" rel="prettyPhoto[gallery]"> <img src="final/05.jpg" alt="Event Photo" class="img-responsive">
+                <div class="img-caption"><span>Image Caption 5</span></div></a> 
+              </li>
+              <li> 
+              	<a href="http://www.dezinethemes.com/envato/onevent/v3/img/gallery/large/06.jpg" title="Event PhotoGallery" rel="prettyPhoto[gallery]"> <img src="final/06.jpg" alt="Event Photo" class="img-responsive">
+                <div class="img-caption"><span>Image Caption 6</span></div></a> 
+              </li>
+              <li> 
+              	<a href="http://www.dezinethemes.com/envato/onevent/v3/img/gallery/large/07.jpg" title="Event PhotoGallery" rel="prettyPhoto[gallery]"> <img src="final/07.jpg" alt="Event Photo" class="img-responsive">
+                <div class="img-caption"><span>Image Caption 7</span></div></a> 
+              </li>
+              <li> 
+              	<a href="http://www.dezinethemes.com/envato/onevent/v3/img/gallery/large/08.jpg" title="Event PhotoGallery" rel="prettyPhoto[gallery]"> <img src="final/08.jpg" alt="Event Photo" class="img-responsive">
+                <div class="img-caption"><span>Image Caption 8</span></div></a> 
+              </li>
+            </ul>
+          </div>
+          <!--end-img-grid--> 
+          
+        </div>
+        <!--end-event-schedule-content-->
+        
+      </div>
+    </div>
+  </div>
+</section>
+<!--END-SCHEDULE--> 
+
+<!--BEGIN-SPEAKERS-->
+<section id="speakers" class="">
+  <div class="container">
+    <div class="section clearfix bottom-margin">
+      <header class="page-head colored clearfix">
+        <h2>Asistentes al evento</h2>
+        <p class="text-muted">Traemos expertos alrededor del mundo </p>
+      </header>
+      <article>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+Nulla hendrerit vitae nulla at ultricies. Suspendisse consequat tempor 
+mi, eu tristique mi. 
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+Suspendisse dignissim convallis dolor at viverra. Nullam consequat nulla
+ enim, eu vulputate magna varius quis. 
+          Cum sociis natoque penatibus et magnis dis parturient montes, 
+nascetur ridiculus mus. </p>
+      </article>
+    </div>
+    <div class="row clearfix speaker-grid">
+    
+      <div class="col-md-4 col-sm-6 col-xs-6">
+        <div class="section no-padding">
+          <figure> 
+          	<img src="final/speaker1.jpg" alt="Speaker" class="img-responsive">
+            <figcaption style="background-color: rgba(255, 109, 64, 0.9);" class="speaker-info">
+ 
+            	Lorem
+           	</figcaption>
+          </figure>
+          <div class="speaker clearfix">
+            <div class="col-md-10 col-sm-9 col-xs-9">
+              <h6>Richard Doe</h6>
+              <p>Vice President, Company Name</p>
+            </div>
+            <div class="col-md-2 col-sm-3 col-xs-3 readIcon"> <i class="fa fa-chevron-circle-down"></i> </div>
+          </div>
+        </div>
+      </div>
+      <!--end-col-md-4-->
+      
+      <div class="col-md-4 col-sm-6 col-xs-6">
+        <div class="section no-padding">
+          <figure> 
+          	<img src="final/speaker2.jpg" alt="Speaker" class="img-responsive">
+            <figcaption style="background-color: rgba(255, 109, 64, 0.9);" class="speaker-info">
+ 
+            	Lorem ipsum dolor sit amet
+           	</figcaption>
+          </figure>
+          <div class="speaker clearfix">
+            <div class="col-md-10 col-sm-9 col-xs-9">
+              <h6>Christine Doe</h6>
+              <p>CEO, Company Name</p>
+            </div>
+            <div class="col-md-2 col-sm-3 col-xs-3 readIcon"> <i class="fa fa-chevron-circle-down"></i> </div>
+          </div>
+        </div>
+      </div>
+      <!--end-col-md-4-->
+      
+      <div class="col-md-4 col-sm-6 col-xs-6">
+        <div class="section no-padding">
+          <figure> 
+          	<img src="final/speaker3.jpg" alt="Speaker" class="img-responsive">
+            <figcaption style="background-color: rgba(255, 109, 64, 0.9);" class="speaker-info">
+ 
+            	Lorem ipsum dolor sit amet,
+           	</figcaption>
+          </figure>
+          <div class="speaker clearfix">
+            <div class="col-md-10 col-sm-9 col-xs-9">
+              <h6>Jonathan Doe</h6>
+              <p>Operations, Company Name</p>
+            </div>
+            <div class="col-md-2 col-sm-3 col-xs-3 readIcon"> <i class="fa fa-chevron-circle-down"></i> </div>
+          </div>
+        </div>
+      </div>
+      <!--end-col-md-4-->
+      
+      <div class="col-md-4 col-sm-6 col-xs-6">
+        <div class="section no-padding">
+          <figure> 
+          	<img src="final/speaker5.jpg" alt="Speaker" class="img-responsive">
+            <figcaption style="background-color: rgba(255, 109, 64, 0.9);" class="speaker-info">
+ 
+            	Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+Nulla hendrerit vitae nulla at ultricies. Suspendisse consequat tempor 
+mi, eu tristique mi. Lorem ipsum dolor sit amet, consectetur adipiscing 
+elit. Suspendisse dignissim convallis dolor at viverra. 
+           	</figcaption>
+          </figure>
+          <div class="speaker clearfix">
+            <div class="col-md-10 col-sm-9 col-xs-9">
+              <h6>Richard Doe</h6>
+              <p>Vice President, Company Name</p>
+            </div>
+            <div class="col-md-2 col-sm-3 col-xs-3 readIcon"> <i class="fa fa-chevron-circle-down"></i> </div>
+          </div>
+        </div>
+      </div>
+      <!--end-col-md-4-->
+      
+      <div class="col-md-4 col-sm-6 col-xs-6">
+        <div class="section no-padding">
+          <figure> 
+          	<img src="final/speaker4.jpg" alt="Speaker" class="img-responsive">
+            <figcaption style="background-color: rgba(255, 109, 64, 0.9);" class="speaker-info">
+ 
+            	Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+Nulla hendrerit vitae nulla at ultricies. Suspendisse consequat tempor 
+mi, eu tristique mi. Lorem ipsum dolor sit amet, consectetur adipiscing 
+elit. Suspendisse dignissim convallis dolor at viverra. 
+           	</figcaption>
+          </figure>
+          <div class="speaker clearfix">
+            <div class="col-md-10 col-sm-9 col-xs-9">
+              <h6>Christine Doe</h6>
+              <p>CEO, Company Name</p>
+            </div>
+            <div class="col-md-2 col-sm-3 col-xs-3 readIcon"> <i class="fa fa-chevron-circle-down"></i> </div>
+          </div>
+        </div>
+      </div>
+      <!--end-col-md-4-->
+      
+      <div class="col-md-4 col-sm-6 col-xs-6">
+        <div class="section no-padding">
+          <figure> 
+          	<img src="final/speaker7.jpg" alt="Speaker" class="img-responsive">
+            <figcaption style="background-color: rgba(255, 109, 64, 0.9);" class="speaker-info">
+ 
+            	Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+Nulla hendrerit vitae nulla at ultricies. Suspendisse consequat tempor 
+mi, eu tristique mi. Lorem ipsum dolor sit amet, consectetur adipiscing 
+elit. Suspendisse dignissim convallis dolor at viverra. 
+           	</figcaption>
+          </figure>
+          <div class="speaker clearfix">
+            <div class="col-md-10 col-sm-9 col-xs-9">
+              <h6>Jenny Doe</h6>
+              <p>Operations, Company Name</p>
+            </div>
+            <div class="col-md-2 col-sm-3 col-xs-3 readIcon"> <i class="fa fa-chevron-circle-down"></i> </div>
+          </div>
+        </div>
+      </div>
+      <!--end-col-md-4--> 
+    </div>
+    <!--end-row--> 
+  </div>
+</section>
+<!--END-SPEAKERS--> 
+
+<!--BEGIN-FAQ-->
+<section id="faq" class="page-block">
+  <div class="container">
+    <div class="section">
+      <header class="page-head">
+        <h2>FAQ</h2>
+        <p class="text-muted">Preguntas frecuentes acerca de este evento</p>
+      </header>
+      <article class="row">
+        <div class="panel-group clearfix" id="questions">
+          <div class="col-md-12 col-sm-12">
+          
+            <div class="panel panel-default">
+              <div class="panel-heading">
+                <h4 class="panel-title"> <a data-toggle="collapse" data-parent="#questions" href="#question1"> 1 <span>Que llevar?</span> </a> </h4>
+              </div>
+              <div id="question1" class="panel-collapse collapse">
+                <div class="panel-body">
+                  <p>Ropa abrigada.</p>
+                  <p>Camara fotografica.</p>
+
+                </div>
+              </div>
+            </div>
+            
+            <div class="panel panel-default">
+              <div class="panel-heading">
+                <h4 class="panel-title"> <a data-toggle="collapse" data-parent="#questions" href="#question2"> 2 <span>Nulla hendreit vitae consequat?</span> </a> </h4>
+              </div>
+              <div id="question2" class="panel-collapse collapse">
+                <div class="panel-body">
+                  <p>Anim pariatur cliche reprehenderit, enim eiusmod 
+high life accusamus terry richardson ad squid. 3 wolf moon officia aute,
+ non cupidatat skateboard dolor brunch. 
+                    Food truck quinoa nesciunt laborum eiusmod. Brunch 3
+ wolf moon tempor, sunt aliqua put a bird on it squid single-origin 
+coffee nulla assumenda shoreditch et.</p>
+                  <p>Nihil anim keffiyeh helvetica, craft beer labore 
+wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur 
+butcher vice lomo. 
+                    Leggings occaecat craft beer farm-to-table, raw 
+denim aesthetic synth nesciunt you probably haven't heard of them 
+accusamus labore sustainable VHS.</p>
+                </div>
+              </div>
+            </div>
+            
+            <div class="panel panel-default">
+              <div class="panel-heading">
+                <h4 class="panel-title"> <a data-toggle="collapse" data-parent="#questions" href="#question3"> 3 <span>Suspendisse dignissim convallis dolor at viverra?</span> </a> </h4>
+              </div>
+              <div id="question3" class="panel-collapse collapse">
+                <div class="panel-body">
+                  <p>Anim pariatur cliche reprehenderit, enim eiusmod 
+high life accusamus terry richardson ad squid. 3 wolf moon officia aute,
+ non cupidatat skateboard dolor brunch. 
+                    Food truck quinoa nesciunt laborum eiusmod. Brunch 3
+ wolf moon tempor, sunt aliqua put a bird on it squid single-origin 
+coffee nulla assumenda shoreditch et.</p>
+                  <p>Nihil anim keffiyeh helvetica, craft beer labore 
+wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur 
+butcher vice lomo. 
+                    Leggings occaecat craft beer farm-to-table, raw 
+denim aesthetic synth nesciunt you probably haven't heard of them 
+accusamus labore sustainable VHS.</p>
+                </div>
+              </div>
+            </div>
+
+          </div>
+          <!--end-of-column-12-->
+        </div>
+        <!--end-of-accordion--> 
+        
+      </article>
+    </div>
+  </div>
+</section>
+<!--END-FAQ--> 
+
+<!--BEGIN-VENUE-->
+<section id="venue" class="page-block">
+  <div class="container">
+    <div class="section clearfix bottom-margin">
+      <header class="page-head colored clearfix">
+        <h2>Ubicación</h2>
+        <p class="text-muted">El punto de partida es</p>
+      </header>
+      <article>
+        <div style="position: relative; background-color: rgb(229, 227, 223); overflow: hidden;" id="map_canvas"><div class="gm-style" style="position: absolute; left: 0px; top: 0px; overflow: hidden; width: 100%; height: 100%; z-index: 0;"><div style="position: absolute; left: 0px; top: 0px; overflow: hidden; width: 100%; height: 100%; z-index: 0; cursor: url(&quot;http://maps.gstatic.com/mapfiles/openhand_8_8.cur&quot;), default;"><div style="position: absolute; left: 0px; top: 0px; z-index: 1; width: 100%; will-change: transform;"><div style="position: absolute; left: 0px; top: 0px; z-index: 100; width: 100%;"><div style="position: absolute; left: 0px; top: 0px; z-index: 0;"><div aria-hidden="true" style="position: absolute; left: 0px; top: 0px; z-index: 1; visibility: inherit;"><div style="width: 256px; height: 256px; position: absolute; left: 392px; top: -29px;"></div><div style="width: 256px; height: 256px; position: absolute; left: 392px; top: 227px;"></div><div style="width: 256px; height: 256px; position: absolute; left: 136px; top: -29px;"></div><div style="width: 256px; height: 256px; position: absolute; left: 136px; top: 227px;"></div><div style="width: 256px; height: 256px; position: absolute; left: 648px; top: -29px;"></div><div style="width: 256px; height: 256px; position: absolute; left: 648px; top: 227px;"></div><div style="width: 256px; height: 256px; position: absolute; left: -120px; top: -29px;"></div><div style="width: 256px; height: 256px; position: absolute; left: -120px; top: 227px;"></div><div style="width: 256px; height: 256px; position: absolute; left: 904px; top: -29px;"></div><div style="width: 256px; height: 256px; position: absolute; left: 904px; top: 227px;"></div></div></div></div><div style="position: absolute; left: 0px; top: 0px; z-index: 101; width: 100%;"></div><div style="position: absolute; left: 0px; top: 0px; z-index: 102; width: 100%;"></div><div style="position: absolute; left: 0px; top: 0px; z-index: 103; width: 100%;"><div style="position: absolute; left: 0px; top: 0px; z-index: -1;"><div aria-hidden="true" style="position: absolute; left: 0px; top: 0px; z-index: 1; visibility: inherit;"><div style="width: 256px; height: 256px; overflow: hidden; position: absolute; left: 392px; top: -29px;"><canvas width="256" height="256" style="-moz-user-select: none; position: absolute; left: 0px; top: 0px; height: 256px; width: 256px;" draggable="false"></canvas></div><div style="width: 256px; height: 256px; overflow: hidden; position: absolute; left: 392px; top: 227px;"></div><div style="width: 256px; height: 256px; overflow: hidden; position: absolute; left: 136px; top: -29px;"></div><div style="width: 256px; height: 256px; overflow: hidden; position: absolute; left: 136px; top: 227px;"></div><div style="width: 256px; height: 256px; overflow: hidden; position: absolute; left: 648px; top: -29px;"></div><div style="width: 256px; height: 256px; overflow: hidden; position: absolute; left: 648px; top: 227px;"></div><div style="width: 256px; height: 256px; overflow: hidden; position: absolute; left: -120px; top: -29px;"></div><div style="width: 256px; height: 256px; overflow: hidden; position: absolute; left: -120px; top: 227px;"></div><div style="width: 256px; height: 256px; overflow: hidden; position: absolute; left: 904px; top: -29px;"></div><div style="width: 256px; height: 256px; overflow: hidden; position: absolute; left: 904px; top: 227px;"></div></div></div></div><div style="position: absolute; left: 0px; top: 0px; z-index: 0;"><div aria-hidden="true" style="position: absolute; left: 0px; top: 0px; z-index: 1; visibility: inherit;"><div style="position: absolute; left: 392px; top: -29px; transition: opacity 200ms ease-out 0s;"><img alt="" draggable="false" src="final/vt_010.png" style="position: absolute; left: 0px; top: 0px; width: 256px; height: 256px; -moz-user-select: none; border: 0px none; padding: 0px; margin: 0px; max-width: none;"></div><div style="position: absolute; left: 392px; top: 227px; transition: opacity 200ms ease-out 0s;"><img alt="" draggable="false" src="final/vt_005.png" style="position: absolute; left: 0px; top: 0px; width: 256px; height: 256px; -moz-user-select: none; border: 0px none; padding: 0px; margin: 0px; max-width: none;"></div><div style="position: absolute; left: 648px; top: -29px; transition: opacity 200ms ease-out 0s;"><img alt="" draggable="false" src="final/vt_007.png" style="position: absolute; left: 0px; top: 0px; width: 256px; height: 256px; -moz-user-select: none; border: 0px none; padding: 0px; margin: 0px; max-width: none;"></div><div style="position: absolute; left: -120px; top: -29px; transition: opacity 200ms ease-out 0s;"><img alt="" draggable="false" src="final/vt_009.png" style="position: absolute; left: 0px; top: 0px; width: 256px; height: 256px; -moz-user-select: none; border: 0px none; padding: 0px; margin: 0px; max-width: none;"></div><div style="position: absolute; left: -120px; top: 227px; transition: opacity 200ms ease-out 0s;"><img alt="" draggable="false" src="final/vt_006.png" style="position: absolute; left: 0px; top: 0px; width: 256px; height: 256px; -moz-user-select: none; border: 0px none; padding: 0px; margin: 0px; max-width: none;"></div><div style="position: absolute; left: 904px; top: -29px; transition: opacity 200ms ease-out 0s;"><img alt="" draggable="false" src="final/vt_003.png" style="position: absolute; left: 0px; top: 0px; width: 256px; height: 256px; -moz-user-select: none; border: 0px none; padding: 0px; margin: 0px; max-width: none;"></div><div style="position: absolute; left: 904px; top: 227px; transition: opacity 200ms ease-out 0s;"><img alt="" draggable="false" src="final/vt.png" style="position: absolute; left: 0px; top: 0px; width: 256px; height: 256px; -moz-user-select: none; border: 0px none; padding: 0px; margin: 0px; max-width: none;"></div><div style="position: absolute; left: 648px; top: 227px; transition: opacity 200ms ease-out 0s;"><img alt="" draggable="false" src="final/vt_002.png" style="position: absolute; left: 0px; top: 0px; width: 256px; height: 256px; -moz-user-select: none; border: 0px none; padding: 0px; margin: 0px; max-width: none;"></div><div style="position: absolute; left: 136px; top: 227px; transition: opacity 200ms ease-out 0s;"><img alt="" draggable="false" src="final/vt_004.png" style="position: absolute; left: 0px; top: 0px; width: 256px; height: 256px; -moz-user-select: none; border: 0px none; padding: 0px; margin: 0px; max-width: none;"></div><div style="position: absolute; left: 136px; top: -29px; transition: opacity 200ms ease-out 0s;"><img alt="" draggable="false" src="final/vt_008.png" style="position: absolute; left: 0px; top: 0px; width: 256px; height: 256px; -moz-user-select: none; border: 0px none; padding: 0px; margin: 0px; max-width: none;"></div></div></div></div><div class="gm-style-pbc" style="position: absolute; left: 0px; top: 0px; z-index: 2; width: 100%; height: 100%; transition-duration: 0.3s; opacity: 0; display: none;"><p class="gm-style-pbt">Para mover el mapa, utiliza dos dedos</p></div><div style="position: absolute; left: 0px; top: 0px; z-index: 3; width: 100%; height: 100%;"></div><div style="position: absolute; left: 0px; top: 0px; z-index: 4; width: 100%;"><div style="position: absolute; left: 0px; top: 0px; z-index: 104; width: 100%;"></div><div style="position: absolute; left: 0px; top: 0px; z-index: 105; width: 100%;"></div><div style="position: absolute; left: 0px; top: 0px; z-index: 106; width: 100%;"></div><div style="position: absolute; left: 0px; top: 0px; z-index: 107; width: 100%;"></div></div></div><div style="margin-left: 5px; margin-right: 5px; z-index: 1000000; position: absolute; left: 0px; bottom: 0px;"><a title="Haz clic aquí para visualizar esta zona en Google Maps" href="https://maps.google.com/maps?ll=37.791649,-122.394395&amp;z=14&amp;t=m&amp;hl=es-ES&amp;gl=US&amp;mapclient=apiv3" target="_blank" style="position: static; overflow: visible; float: none; display: inline;"><div style="width: 66px; height: 26px; cursor: pointer;"><img draggable="false" src="final/google4.png" style="position: absolute; left: 0px; top: 0px; width: 66px; height: 26px; -moz-user-select: none; border: 0px none; padding: 0px; margin: 0px;"></div></a></div><div style="background-color: white; padding: 15px 21px; border: 1px solid rgb(171, 171, 171); font-family: Roboto,Arial,sans-serif; color: rgb(34, 34, 34); box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.2); z-index: 10000002; display: none; width: 256px; height: 148px; position: absolute; left: 420px; top: 85px;"><div style="padding: 0px 0px 10px; font-size: 16px;">Datos de mapas</div><div style="font-size: 13px;">Datos de mapas ©2016 Google</div><div style="width: 13px; height: 13px; overflow: hidden; position: absolute; opacity: 0.7; right: 12px; top: 12px; z-index: 10000; cursor: pointer;"><img draggable="false" src="final/mapcnt6.png" style="position: absolute; left: -2px; top: -336px; width: 59px; height: 492px; -moz-user-select: none; border: 0px none; padding: 0px; margin: 0px; max-width: none;"></div></div><div style="z-index: 1000001; position: absolute; right: 225px; bottom: 0px; width: 151px;" class="gmnoprint"><div class="gm-style-cc" style="-moz-user-select: none; height: 14px; line-height: 14px;" draggable="false"><div style="opacity: 0.7; width: 100%; height: 100%; position: absolute;"><div style="width: 1px;"></div><div style="background-color: rgb(245, 245, 245); width: auto; height: 100%; margin-left: 1px;"></div></div><div style="position: relative; padding-right: 6px; padding-left: 6px; font-family: Roboto,Arial,sans-serif; font-size: 10px; color: rgb(68, 68, 68); white-space: nowrap; direction: ltr; text-align: right; vertical-align: middle; display: inline-block;"><a style="color: rgb(68, 68, 68); text-decoration: none; cursor: pointer; display: none;">Datos de mapas</a><span style="">Datos de mapas ©2016 Google</span></div></div></div><div style="position: absolute; right: 0px; bottom: 0px;" class="gmnoscreen"><div style="font-family: Roboto,Arial,sans-serif; font-size: 11px; color: rgb(68, 68, 68); direction: ltr; text-align: right; background-color: rgb(245, 245, 245);">Datos de mapas ©2016 Google</div></div><div draggable="false" style="z-index: 1000001; -moz-user-select: none; height: 14px; line-height: 14px; position: absolute; right: 139px; bottom: 0px;" class="gmnoprint gm-style-cc"><div style="opacity: 0.7; width: 100%; height: 100%; position: absolute;"><div style="width: 1px;"></div><div style="background-color: rgb(245, 245, 245); width: auto; height: 100%; margin-left: 1px;"></div></div><div style="position: relative; padding-right: 6px; padding-left: 6px; font-family: Roboto,Arial,sans-serif; font-size: 10px; color: rgb(68, 68, 68); white-space: nowrap; direction: ltr; text-align: right; vertical-align: middle; display: inline-block;"><a target="_blank" href="https://www.google.com/intl/es-ES_US/help/terms_maps.html" style="text-decoration: none; cursor: pointer; color: rgb(68, 68, 68);">Términos de uso</a></div></div><div style="width: 25px; height: 25px; overflow: hidden; display: none; margin: 10px 14px; position: absolute; top: 0px; right: 0px;"><img class="gm-fullscreen-control" draggable="false" src="final/sv5.png" style="position: absolute; left: -52px; top: -86px; width: 164px; height: 112px; -moz-user-select: none; border: 0px none; padding: 0px; margin: 0px;"></div><div class="gm-style-cc" style="-moz-user-select: none; height: 14px; line-height: 14px; position: absolute; right: 0px; bottom: 0px;" draggable="false"><div style="opacity: 0.7; width: 100%; height: 100%; position: absolute;"><div style="width: 1px;"></div><div style="background-color: rgb(245, 245, 245); width: auto; height: 100%; margin-left: 1px;"></div></div><div style="position: relative; padding-right: 6px; padding-left: 6px; font-family: Roboto,Arial,sans-serif; font-size: 10px; color: rgb(68, 68, 68); white-space: nowrap; direction: ltr; text-align: right; vertical-align: middle; display: inline-block;"><a href="https://www.google.com/maps/@37.791649,-122.394395,14z/data=%2110m1%211e1%2112b1?source=apiv3&amp;rapsrc=apiv3" style="font-family: Roboto,Arial,sans-serif; font-size: 10px; color: rgb(68, 68, 68); text-decoration: none; position: relative;" title="Informar a Google acerca de errores en las imágenes o en el mapa de carreteras" target="_new">Informar de un error de Maps</a></div></div><div controlheight="93" controlwidth="28" draggable="false" style="margin: 10px; -moz-user-select: none; position: absolute; bottom: 107px; right: 28px;" class="gmnoprint gm-bundled-control gm-bundled-control-on-bottom"><div controlheight="55" controlwidth="28" style="position: absolute; left: 0px; top: 38px;" class="gmnoprint"><div style="-moz-user-select: none; box-shadow: 0px 1px 4px -1px rgba(0, 0, 0, 0.3); border-radius: 2px; cursor: pointer; background-color: rgb(255, 255, 255); width: 28px; height: 55px;" draggable="false"><div style="position: relative; width: 28px; height: 27px; left: 0px; top: 0px;" title="Acerca la imagen"><div style="overflow: hidden; position: absolute; width: 15px; height: 15px; left: 7px; top: 6px;"><img draggable="false" src="final/tmapctrl.png" style="position: absolute; left: 0px; top: 0px; -moz-user-select: none; border: 0px none; padding: 0px; margin: 0px; max-width: none; width: 120px; height: 54px;"></div></div><div style="position: relative; overflow: hidden; width: 67%; height: 1px; left: 16%; background-color: rgb(230, 230, 230); top: 0px;"></div><div style="position: relative; width: 28px; height: 27px; left: 0px; top: 0px;" title="Aleja la imagen"><div style="overflow: hidden; position: absolute; width: 15px; height: 15px; left: 7px; top: 6px;"><img draggable="false" src="final/tmapctrl.png" style="position: absolute; left: 0px; top: -15px; -moz-user-select: none; border: 0px none; padding: 0px; margin: 0px; max-width: none; width: 120px; height: 54px;"></div></div></div></div><div controlheight="28" controlwidth="28" style="background-color: rgb(255, 255, 255); box-shadow: 0px 1px 4px -1px rgba(0, 0, 0, 0.3); border-radius: 2px; width: 28px; height: 28px; cursor: url(&quot;http://maps.gstatic.com/mapfiles/openhand_8_8.cur&quot;), default; position: absolute; left: 0px; top: 0px;" class="gm-svpc"><div style="position: absolute; left: 1px; top: 1px;"></div><div style="position: absolute; left: 1px; top: 1px;"><div aria-label="Control del hombrecito naranja de Street View" style="width: 26px; height: 26px; overflow: hidden; position: absolute; left: 0px; top: 0px;"><img draggable="false" src="final/cb_scout5.png" style="position: absolute; left: -147px; top: -26px; width: 215px; height: 835px; -moz-user-select: none; border: 0px none; padding: 0px; margin: 0px; max-width: none;"></div><div aria-label="El hombrecito naranja está en la parte superior del mapa." style="width: 26px; height: 26px; overflow: hidden; position: absolute; left: 0px; top: 0px; visibility: hidden;"><img draggable="false" src="final/cb_scout5.png" style="position: absolute; left: -147px; top: -52px; width: 215px; height: 835px; -moz-user-select: none; border: 0px none; padding: 0px; margin: 0px; max-width: none;"></div><div aria-label="Control del hombrecito naranja de Street View" style="width: 26px; height: 26px; overflow: hidden; position: absolute; left: 0px; top: 0px; visibility: hidden;"><img draggable="false" src="final/cb_scout5.png" style="position: absolute; left: -147px; top: -78px; width: 215px; height: 835px; -moz-user-select: none; border: 0px none; padding: 0px; margin: 0px; max-width: none;"></div></div></div><div style="display: none; position: absolute;" controlheight="0" controlwidth="28" class="gmnoprint"><div title="Girar el mapa 90 grados" style="width: 28px; height: 28px; overflow: hidden; position: absolute; border-radius: 2px; box-shadow: 0px 1px 4px -1px rgba(0, 0, 0, 0.3); cursor: pointer; background-color: rgb(255, 255, 255); display: none;"><img draggable="false" src="final/tmapctrl4.png" style="position: absolute; left: -141px; top: 6px; width: 170px; height: 54px; -moz-user-select: none; border: 0px none; padding: 0px; margin: 0px; max-width: none;"></div><div class="gm-tilt" style="width: 28px; height: 28px; overflow: hidden; position: absolute; border-radius: 2px; box-shadow: 0px 1px 4px -1px rgba(0, 0, 0, 0.3); top: 0px; cursor: pointer; background-color: rgb(255, 255, 255);"><img draggable="false" src="final/tmapctrl4.png" style="position: absolute; left: -141px; top: -13px; width: 170px; height: 54px; -moz-user-select: none; border: 0px none; padding: 0px; margin: 0px; max-width: none;"></div></div></div></div></div>
+        <div class="row clearfix">
+          <div style="height: 428px;" class="col-md-6 col-sm-12 column">
+            <div class="column-content">
+              <h3><span>Ubicación</span> evento </h3>
+              <ul class="address">
+                <li> <i class="fa fa-map-marker"></i> <strong>Nos reunimos en</strong><br>
+                  parque cevallos<br>
+                  Cevallos y </li>
+                <li> <i class="fa fa-phone"></i> <strong>Telefono contacto</strong><br>
+                  310.55.1213 </li>
+              </ul>
+            </div>
+          </div>
+          <div style="height: 428px;" class="col-md-6 col-sm-12 column directions-results">
+            <div class="column-content">
+              <h3>Gracias por participar</h3>
+              <div id="directionsPanel"> 
+                Agradecimiento
+              </div>
+            </div>
+          </div>
+        </div>
+        <!--end-of-row--> 
+      </article>
+    </div>
+  </div>
+</section>
+<!--END-VENUE--> 
+
+</div>
+<!--END-FOOTER--> 
+
+<script src="final/jquery_004.js"></script> 
+<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAWzAKgYTzSqryuH9LgnGMb1fucjS4vFnc&callback=initMap"></script>
+<script src="final/jquery_002.js"></script> 
+<script type="text/javascript" src="final/directions.js"></script>
+<script src="final/placeholders.js"></script> 
+<script src="final/jquery_003.js"></script> 
+<script src="final/bootstrap.js"></script>
+<script src="final/jquery_005.js"></script> 
+<script src="final/custom.js"></script><div style="left: 0px; top: 0px; overflow: hidden; margin: 0px; padding: 0px; height: 943px; width: 1907px; z-index: -999999; position: fixed;" class="backstretch"><img class="deleteable" src="final/slide1.jpg" style="position: absolute; margin: 0px; padding: 0px; border: medium none; width: 2011.73px; height: 943px; max-height: none; max-width: none; z-index: -999999; left: -52.3667px; top: 0px;"><img src="final/slide2.jpg" style="position: absolute; margin: 0px; padding: 0px; border: medium none; width: 2011.73px; height: 943px; max-height: none; max-width: none; z-index: -999999; opacity: 0.996626; left: -52.3667px; top: 0px;"></div> 
+<script src="final/onevent.js"></script> 
+<script src="final/jquery_006.js"></script> 
+<script src="final/jquery.js"></script>
+
+
+<input style="visibility:hidden; position:fixed; top:20px; right:20px;" id="siteColorBox" type="text"><input style="visibility:hidden; position:fixed; top:20px; right:20px;" id="siteTexBox" type="text"><i id="hiddenhead" style="visibility:hidden; font-size:1px; position:absolute; left:-500px;"></i><input style="visibility:hidden; position:fixed; top:20px; right:20px;" id="siteBgColorBox" type="text"><input style="visibility:hidden; position:fixed; top:20px; right:20px;" id="siteBgTexBox" type="text"></body></html>

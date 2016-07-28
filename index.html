@@ -59,10 +59,37 @@ captain.up(function() {
   <script src="app.js" type="text/javascript" charset="utf-8"></script>
   <script src="syntaxhighlighter_3.0.83/src/shCore.js" type="text/javascript" charset="utf-8"></script>
   <script src="syntaxhighlighter_3.0.83/scripts/shBrushJScript.js" type="text/javascript" charset="utf-8"></script>
+
+  <script type="text/javascript">
+      // Load the IFrame Player API code asynchronously.
+/*  var tag = document.createElement('script');
+  tag.src = "https://www.youtube.com/player_api";
+  var firstScriptTag = document.getElementsByTagName('script')[0];
+  firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+  */        
+  </script>
+  <!--<script src="videos.js" type="text/javascript" charset="utf-8"></script>-->
+  <script type="text/javascript" src="swfobject/swfobject.js"></script>
+
+
 </head>
 <body>
 <div class="container">
-  
+<iframe src="https://player.vimeo.com/video/76979871" width="640" height="360" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+
+<script src="https://player.vimeo.com/api/player.js"></script>
+<script>
+    var iframe = document.querySelector('iframe');
+    var player = new Vimeo.Player(iframe);
+
+    player.on('play', function() {
+        console.log('played the video!');
+    });
+
+    player.getVideoTitle().then(function(title) {
+        console.log('title:', title);
+    });
+</script>
 
   <div id='cptup-ready'></div> 
   <div class="panel panel-default">
@@ -213,7 +240,8 @@ captain.up(function() {
   });
 });</pre>
 
-<iframe title="Pachamama" src="https://www.youtube.com/embed/afJ63nTVaE8?rel=0&amp;wmode=opaque&amp;enablejsapi=1" allowfullscreen="1" id="yt192d0" style="margin: 0px; padding: 0px; border: 0px; font-weight: inherit; font-style: inherit; font-size: 13.6px; font-family: inherit; vertical-align: baseline; max-width: 100%;" frameborder="0" height="300" width="400"></iframe>
+<!--<iframe id="video1" title="Pachamama" src="https://www.youtube.com/embed/afJ63nTVaE8?rel=0&amp;wmode=opaque&amp;enablejsapi=1" allowfullscreen="1" id="yt192d0" style="margin: 0px; padding: 0px; border: 0px; font-weight: inherit; font-style: inherit; font-size: 13.6px; font-family: inherit; vertical-align: baseline; max-width: 100%;" frameborder="0" height="300" width="400"></iframe>-->
+<div id="video1"></div>
             </div> 
 
             <div class="row">
